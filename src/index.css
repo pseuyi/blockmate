@@ -1,0 +1,19 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'graphik';
+  /*background: #f7f7f7;*/
+}
+h1, h2 {
+  font-family: font77293, sans-serif;
+  line-height: 1rem;
+}
+hr {
+  border-top: 0.6px solid #555555;
+}
+.header {
+  font-size: 6rem;
+}
+/*.bold-line {
+  border: 42px solid #222222;
+}*/
