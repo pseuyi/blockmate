@@ -22,6 +22,7 @@ const Bar = () => (
   <MuiThemeProvider muiTheme={muiTheme}>
     <AppBar
       title="Blockmate"
+      iconClassNameLeft=""
       iconElementRight={<div><FlatButton label="blocks" /> <FlatButton label="users" /> <FlatButton label="about" /></div>}
     />
   </MuiThemeProvider>

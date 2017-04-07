@@ -2,8 +2,9 @@ import React from 'react'
 import { connect } from 'react-redux'
 
 import { getUsers, addUser } from '../ducks/users'
-import AppBar from './AppBar'
-import Users from './Users'
+
+import Navbar from './Navbar'
+import Content from './Content'
 import './App.css'
 
 class App extends React.Component {
@@ -15,15 +16,8 @@ class App extends React.Component {
 
     return (
       <div className="app-container">
-        <AppBar />
-        <div className="content-container">
-          <Users
-            users={this.props.users}
-          />
-          <h2>just one?</h2>
-          <hr />
-          <p>'n/a'</p>
-        </div>
+        <Navbar />
+        <Content />
       </div>
     )
   }
@@ -34,6 +28,3 @@ const mapState = ({ users }) => ({ users })
 const mapDispatch = { addUser, getUsers }
 
 export default connect(mapState, mapDispatch)(App)
-
-// <h1 className="header">blockmate</h1>
-// <hr className="bold-line"/>
