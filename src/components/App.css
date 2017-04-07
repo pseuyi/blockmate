@@ -1,5 +1,12 @@
 .app-container {
+  position: relative;
 }
 .content-container {
   padding: 0 2rem 2rem 2rem;
+}
+#prototype {
+  position: fixed;
+  z-index: 999999999;
+  bottom: 5px;
+  right: 0;
 }

@@ -1,11 +1,23 @@
 import React from 'react'
 import { connect } from 'react-redux'
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider'
+import getMuiTheme from 'material-ui/styles/getMuiTheme'
+import { grey50, teal800, white } from 'material-ui/styles/colors'
 
 import { getUsers, addUser } from '../ducks/users'
-
 import Navbar from './Navbar'
 import Content from './Content'
 import './App.css'
+
+const muiTheme = getMuiTheme({
+  palette: {
+    primary1Color: teal800,
+    textColor: white,
+    alternateTextColor: white,
+    borderColor: grey50
+  },
+  fontFamily: 'graphik, sans-serif',
+})
 
 class App extends React.Component {
   componentWillMount () {
@@ -13,12 +25,14 @@ class App extends React.Component {
     // created 125d075fe519aae02d5dc76b300c112729ecb473
   }
   render() {
-
     return (
-      <div className="app-container">
-        <Navbar />
-        <Content />
-      </div>
+      <MuiThemeProvider muiTheme={muiTheme}>
+        <div className="app-container">
+          <Navbar />
+          <Content />
+          <img id="prototype" src='proto.png' />
+        </div>
+      </MuiThemeProvider>
     )
   }
 }
