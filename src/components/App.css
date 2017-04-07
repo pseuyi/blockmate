@@ -12,5 +12,7 @@ h1 {
   font-weight: normal;
   line-height: normal;
 }
-hr {
+.form-fields {
+  padding: 4rem;
+  border: 1px solid black;
 }

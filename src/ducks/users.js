@@ -28,7 +28,7 @@ export const getUsers = () => dispatch => {
 }
 
 export const addUser = user => dispatch => {
-  axios.post('http://strato-ms-dev.eastus.cloudapp.azure.com/bloc/users/blocko', user)
+  axios.post(`http://strato-ms-dev.eastus.cloudapp.azure.com/bloc/users/${user}`, user)
   .then(res=>dispatch(create(res.data)))
   .catch(err => console.error('bad post', err))
 }
