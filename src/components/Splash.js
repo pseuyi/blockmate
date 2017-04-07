@@ -1,53 +1,45 @@
 import React from 'react'
 import { Icon } from 'semantic-ui-react'
 import RaisedButton from 'material-ui/RaisedButton'
-import { amber500 } from 'material-ui/styles/colors'
 
+import Steps from './Steps'
 import './Splash.css'
 
 const style = {
-  margin: 0,
+  'font-size': '20px',
+  'margin': 'auto',
+  'display': 'block',
+  'padding': '0',
+  'width': '340px',
+  'height': '54px',
+  'borderRadius': 0,
+
 }
 const buttonStyle = {
-  'borderRadius': 0,
+  'display': 'inline-block',
+  'vertical-align': 'middle'
+}
+
+const labelStyle = {
+  'position': 'absolute',
+  'top': 0,
+  'bottom': 0,
+  'left': 0,
+  'right': 0,
+  'padding': '18px 0',
+  'vertical-align': 'middle'
 }
 
 export default class extends React.Component {
   render () {
     return (
-      <div className="splash">
+      <div className="splash content-container">
         <img id="skyline" src="https://app.aerapay.com/img/svgs/skyline.svg" alt="skyline" />
-        <hr />
-        <h1>Getting started</h1>
-        <div className="row description">
-          <div className="col-xs-4">
-            <div className="box icon-header">
-              <Icon name="users" size="big" />
-              <p>Create your account</p>
-              <hr />
-            </div>
-            <p className="description">Phasellus in orci non sapien porttitor aliquet facilisis sed metus. Morbi blandit tincidunt ipsum ut condimentum. Mauris a risus risus. Quisque nec purus nisl.  </p>
-            <RaisedButton label="Create" style={style} buttonStyle={buttonStyle} primary={true} fullWidth={true}/>
-          </div>
-          <div className="col-xs-4">
-            <div className="box icon-header">
-              <Icon name="payment" size="big" />
-              <p>Open a wallet</p>
-              <hr />
-            </div>
-            <p className="description">Fusce lobortis, justo ut vestibulum sagittis, ligula urna gravida lectus, sed luctus ligula magna in tortor. Duis euismod dignissim tortor, non interdum lectus eleifend et. Nullam scelerisque ipsum eu tincidunt ultrices. Proin posuere finibus augue, non venenatis nisi gravida ac. </p>
-            <RaisedButton label="Open" style={style} buttonStyle={buttonStyle} primary={true} fullWidth={true}/>
-          </div>
-          <div className="col-xs-4">
-            <div className="box icon-header">
-              <Icon name="cube" size="big" />
-              <p>Send some ether</p>
-              <hr />
-            </div>
-            <p className="description">Morbi pellentesque sem sed porta condimentum. Nam ante enim, faucibus ut magna ac, tempor lobortis libero. Donec vel urna enim. Sed aliquam nisl non libero egestas eleifend.</p>
-            <RaisedButton label="Send" style={style} buttonStyle={buttonStyle} primary={true} fullWidth={true}/>
-          </div>
-        </div>
+        <hr id="underline" />
+        <h1>A Simple Way To Send & Receive Ether</h1>
+        <h3>Per congue consulatu pertinacia eu, modus fabellas vituperata et qui, aeque euismod efficiantur in est. Cum saperet incorrupte no.</h3>
+        <RaisedButton href="/create" label="Get Started" style={style} buttonStyle={buttonStyle} labelStyle={labelStyle} primary={true}/>
+        <Steps />
       </div>
     )
   }

@@ -6,7 +6,7 @@ import { getUsers, addUser } from '../ducks/users'
 class CreateUser extends React.Component {
   render () {
     return (
-      <div className="create-user">
+      <div className="create-user content-container">
         <h2>Create an account page</h2>
       </div>
     )

@@ -9,7 +9,8 @@ const Routes = (props) => (
   <Router {...props}>
     <Route path="/" component={App}>
       <IndexRoute component={Content}/>
-      <Route path="create" component={CreateUser} />
+      <Route path="/" component={Content}/>
+      <Route path="/create" component={CreateUser} />
     </Route>
   </Router>
 )

@@ -10,7 +10,7 @@ export default class extends React.Component {
         <Navbar  fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="#">Blockmate</a>
+              <a href="/">Blockmate</a>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>

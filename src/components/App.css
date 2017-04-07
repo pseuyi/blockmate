@@ -2,11 +2,11 @@
   position: relative;
 }
 .content-container {
-  padding: 0 2rem 2rem 2rem;
+  padding: 1rem;
 }
-#prototype {
+/*#prototype {
   position: fixed;
   z-index: 999999999;
   bottom: 5px;
   right: 0;
-}
+}*/

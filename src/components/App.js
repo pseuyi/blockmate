@@ -6,7 +6,7 @@ import { grey50, teal800, white } from 'material-ui/styles/colors'
 
 import { getUsers, addUser } from '../ducks/users'
 import Navbar from './Navbar'
-import Content from './Content'
+import Splash from './Splash'
 import './App.css'
 
 const muiTheme = getMuiTheme({
@@ -29,8 +29,7 @@ class App extends React.Component {
       <MuiThemeProvider muiTheme={muiTheme}>
         <div className="app-container">
           <Navbar />
-          <Content />
-          <img id="prototype" src='proto.png' />
+          {this.props.children}
         </div>
       </MuiThemeProvider>
     )
