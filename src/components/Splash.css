@@ -1,0 +1,21 @@
+div.splash {
+  padding-bottom: 1rem;
+  height: 400px;
+}
+#skyline {
+  width: 100%;
+  min-height: 300px;
+  max-height: 500px;
+}
+div.row {
+  font-size: 18px;
+  padding: 1rem 0;
+}
+div.icon-header {
+  padding: 1rem 0;
+  text-align: center;
+  line-height: 6rem;
+}
+p.description {
+  font-size: 12px;
+}

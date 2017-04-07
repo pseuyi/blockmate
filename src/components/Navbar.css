@@ -1,0 +1,35 @@
+
+.bootstrap-navbar {
+  margin-bottom: 80px;
+}
+.navbar.navbar-default {
+  height: 80px;
+  font-family: 'graphik';
+  color: #555555;
+  padding-top: 20px;
+  background: white;
+}
+.navbar-default a.navbar-brand {
+  font-family: font77293, sans-serif;
+  font-size: 36px;
+  color: #000000;
+  float: left;
+}
+.navbar-default a.navbar-brand:hover {
+  color: #d6b71d;
+}
+.navbar-default .navbar-nav>li>a {
+  padding-bottom: 0;
+}
+.navbar-nav {
+  margin: 0;
+}
+div.navbar-collapse.collapse.in {
+  background: white;
+  padding-bottom: 1.4rem;
+  border-bottom: 1px solid black;
+}
+div.container {
+  width: 100%;
+  margin-right: 0;
+}
