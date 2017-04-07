@@ -2,11 +2,15 @@
   position: relative;
 }
 .content-container {
-  padding: 1rem;
+  padding: 4rem 1rem 1rem 1rem;
+  overflow: visible;
+  height: 100%;
+  display: block;
 }
-/*#prototype {
-  position: fixed;
-  z-index: 999999999;
-  bottom: 5px;
-  right: 0;
-}*/
+h1 {
+  font-size: 2rem;
+  font-weight: normal;
+  line-height: normal;
+}
+hr {
+}

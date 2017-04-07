@@ -1,23 +1,23 @@
 import React from 'react'
-import { Icon } from 'semantic-ui-react'
+import { Link } from 'react-router'
 import RaisedButton from 'material-ui/RaisedButton'
 
 import Steps from './Steps'
 import './Splash.css'
 
 const style = {
-  'font-size': '20px',
+  'fontSize': '20px',
   'margin': 'auto',
   'display': 'block',
   'padding': '0',
   'width': '340px',
   'height': '54px',
-  'borderRadius': 0,
 
 }
 const buttonStyle = {
   'display': 'inline-block',
-  'vertical-align': 'middle'
+  'verticalAlign': 'middle',
+  'borderRadius': 0,
 }
 
 const labelStyle = {
@@ -27,7 +27,7 @@ const labelStyle = {
   'left': 0,
   'right': 0,
   'padding': '18px 0',
-  'vertical-align': 'middle'
+  'verticalAlign': 'middle'
 }
 
 export default class extends React.Component {
@@ -38,7 +38,7 @@ export default class extends React.Component {
         <hr id="underline" />
         <h1>A Simple Way To Send & Receive Ether</h1>
         <h3>Per congue consulatu pertinacia eu, modus fabellas vituperata et qui, aeque euismod efficiantur in est. Cum saperet incorrupte no.</h3>
-        <RaisedButton href="/create" label="Get Started" style={style} buttonStyle={buttonStyle} labelStyle={labelStyle} primary={true}/>
+        <RaisedButton label="Get Started" style={style} buttonStyle={buttonStyle} labelStyle={labelStyle} primary={true} containerElement={<Link to="/create"/>}/>
         <Steps />
       </div>
     )

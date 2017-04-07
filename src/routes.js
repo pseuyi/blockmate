@@ -3,13 +3,13 @@ import { Router, Route, IndexRoute } from 'react-router'
 
 import App from './components/App'
 import CreateUser from './components/CreateUser'
-import Content from './components/Content'
+import Splash from './components/Splash'
 
 const Routes = (props) => (
-  <Router {...props}>
+  <Router {...props} onUpdate={() => window.scrollTo(0, 0)}>
     <Route path="/" component={App}>
-      <IndexRoute component={Content}/>
-      <Route path="/" component={Content}/>
+      <IndexRoute component={Splash}/>
+      <Route path="/" component={Splash}/>
       <Route path="/create" component={CreateUser} />
     </Route>
   </Router>

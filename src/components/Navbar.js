@@ -1,5 +1,6 @@
 import React from 'react'
 import { Navbar, Nav, NavItem, MenuItem, NavDropdown } from 'react-bootstrap'
+import { Link } from 'react-router'
 
 import './Navbar.css'
 
@@ -7,10 +8,10 @@ export default class extends React.Component {
   render () {
     return (
       <div className="bootstrap-navbar">
-        <Navbar  fixedTop>
+        <Navbar fixedTop>
           <Navbar.Header>
             <Navbar.Brand>
-              <a href="/">Blockmate</a>
+              <Link to="/">Blockmate</Link>
             </Navbar.Brand>
             <Navbar.Toggle />
           </Navbar.Header>
