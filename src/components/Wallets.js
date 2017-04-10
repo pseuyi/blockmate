@@ -11,9 +11,12 @@ class Wallets extends React.Component {
     const { ether } = this.props
     return (
       <div className="row wallets">
-        <div className="col-xs-12">
-          <h1>Address Book</h1>
+        <div className="col-xs-12 ">
+          <div><h1>Address Book</h1></div>
           <br />
+        </div>
+        <div className="col-xs-12 unblocked centered">
+          <div>
           <ul>
           {
             ether && ether.map(addr=>(
@@ -21,6 +24,8 @@ class Wallets extends React.Component {
             ))
           }
           </ul>
+          </div>
+
         </div>
       </div>
     )

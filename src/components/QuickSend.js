@@ -2,8 +2,6 @@ import React from 'react'
 import { Icon } from 'semantic-ui-react'
 import RaisedButton from 'material-ui/RaisedButton'
 
-import './QuickSend.css'
-
 const style = {
   margin: 'auto',
   float: 'right'
@@ -15,7 +13,6 @@ const buttonStyle = {
 export default class extends React.Component {
   render () {
     return (
-
       <div className="row description">
         <div className="col-xs-12">
           <h1>Quick Send ABC</h1>

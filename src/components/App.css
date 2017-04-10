@@ -20,7 +20,9 @@ h1 {
 p.description {
   font-size: 14px;
 }
-/*#arrow {
-  padding: 4rem 8rem;
-  transform: rotateY(-180deg) rotate(90deg);
-}*/
+.centered {
+  text-align: center;
+}
+.text-right {
+  text-align: right;
+}

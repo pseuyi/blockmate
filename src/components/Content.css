@@ -1,7 +1,7 @@
 .unblocked {
 }
 .blocked {
-  background: black;
+  background: #2D2D2D;
   background-clip: content-box;
   color: white;
 }
@@ -11,4 +11,11 @@
 }
 .blocked p {
   padding: 2rem;
+}
+/*.blocked h1 {
+  font-weight: normal;
+  padding: 1rem;
+}*/
+ul {
+  list-style: none;
 }
