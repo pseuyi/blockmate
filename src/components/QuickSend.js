@@ -1,6 +1,10 @@
 import React from 'react'
+import { connect } from 'react-redux'
 import { Icon } from 'semantic-ui-react'
+import TextField from 'material-ui/TextField'
 import RaisedButton from 'material-ui/RaisedButton'
+
+import { send } from '../ducks/ether'
 
 const style = {
   margin: 'auto',
@@ -10,7 +14,17 @@ const buttonStyle = {
   'borderRadius': 0,
 }
 
-export default class extends React.Component {
+class QuickSend extends React.Component {
+  handleSubmit = event => {
+    event.preventDefault()
+    let data = {
+      user: event.target.name.value,
+      password: event.target.password.value,
+      toAddress: event.target.address.value,
+      value: event.target.amount.value
+    }
+    this.props.send(data)
+  }
   render () {
     return (
       <div className="row description">
@@ -20,9 +34,31 @@ export default class extends React.Component {
         </div>
         <div className="col-xs-8 unblocked">
           <div>
-            <p className="description">Fusce lobortis, justo ut vestibulum sagittis, ligula urna gravida lectus, sed luctus ligula magna in tortor. Duis euismod dignissim tortor, non interdum lectus eleifend et.</p>
-            <p className="description">Fusce lobortis, justo ut vestibulum sagittis, ligula urna gravida lectus, sed luctus ligula magna in tortor. Duis euismod dignissim tortor, non interdum lectus eleifend et.</p>
-            <RaisedButton label="Do this thing" style={style} buttonStyle={buttonStyle} primary={true}/>
+            <form onSubmit={this.handleSubmit}>
+              <TextField
+                name="name"
+                floatingLabelText="your username"
+                fullWidth={true}
+              /><br />
+              <TextField
+                name="password"
+                floatingLabelText="your password"
+                type="password"
+                fullWidth={true}
+              />
+              <TextField
+                name="address"
+                floatingLabelText="send to this address"
+                fullWidth={true}
+              />
+              <TextField
+                name="amount"
+                floatingLabelText="amount"
+                fullWidth={true}
+              />
+              <p></p>
+              <RaisedButton type="submit" label="Send" style={style} buttonStyle={buttonStyle} primary={true}/>
+            </form>
           </div>
         </div>
         <div className="col-xs-4 blocked">
@@ -32,3 +68,7 @@ export default class extends React.Component {
     )
   }
 }
+const mapState = null
+const mapDispatch = { send }
+
+export default connect(mapState, mapDispatch)(QuickSend)

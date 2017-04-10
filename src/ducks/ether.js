@@ -1,6 +1,7 @@
 import axios from 'axios'
 
 // actions
+
 const SEND = 'SEND'
 const GET = 'GET_WALLETS'
 
@@ -29,6 +30,7 @@ export default function reducer (ether = [], action) {
 }
 
 // dispatchers
+
 export const getAll = () => dispatch => {
   axios.get('http://strato-ms-dev.eastus.cloudapp.azure.com/bloc/addresses')
   .then(res=>dispatch(getWallets(res.data)))

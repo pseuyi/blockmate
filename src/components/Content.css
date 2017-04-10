@@ -12,10 +12,9 @@
 .blocked p {
   padding: 2rem;
 }
-/*.blocked h1 {
-  font-weight: normal;
-  padding: 1rem;
-}*/
 ul {
   list-style: none;
+}
+ul li:hover {
+  background: yellow;
 }
