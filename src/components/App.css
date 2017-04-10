@@ -2,7 +2,7 @@
   position: relative;
 }
 .content-container {
-  padding: 4rem 1rem 1rem 1rem;
+  padding: 4rem 2rem;
   overflow: visible;
   height: 100%;
   display: block;
@@ -12,7 +12,15 @@ h1 {
   font-weight: normal;
   line-height: normal;
 }
-.form-fields {
+.bordered {
   padding: 4rem;
   border: 1px solid black;
+  color: black;
 }
+p.description {
+  font-size: 14px;
+}
+/*#arrow {
+  padding: 4rem 8rem;
+  transform: rotateY(-180deg) rotate(90deg);
+}*/

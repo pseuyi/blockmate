@@ -2,6 +2,7 @@ import React from 'react'
 import { Icon } from 'semantic-ui-react'
 import RaisedButton from 'material-ui/RaisedButton'
 
+// TODO: refactor this type of button to component
 const style = {
   margin: 'auto',
   float: 'right'

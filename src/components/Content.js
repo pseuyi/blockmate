@@ -1,21 +1,21 @@
 import React from 'react'
 
 import Splash from './Splash'
+import Steps from './Steps'
+import QuickSend from './QuickSend'
+import Wallets from './Wallets'
 
 export default class extends React.Component {
   render () {
-    const {users} = this.props
     return (
       <div className="content-container">
         <Splash />
+        <Steps />
+        <QuickSend />
+        <Wallets />
       </div>
     )
   }
 }
 
-// <Users
-//   users={this.props.users}
-// />
-// <h2>just one?</h2>
-// <hr />
-// <p>'n/a'</p>
+//TODO: refactor into container

@@ -1,0 +1,14 @@
+.unblocked {
+}
+.blocked {
+  background: black;
+  background-clip: content-box;
+  color: white;
+}
+.unblocked > div {
+  padding: 2rem;
+  border: 1px solid black;
+}
+.blocked p {
+  padding: 2rem;
+}

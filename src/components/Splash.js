@@ -33,13 +33,14 @@ const labelStyle = {
 export default class extends React.Component {
   render () {
     return (
-      <div className="splash content-container">
-        <img id="skyline" src="https://app.aerapay.com/img/svgs/skyline.svg" alt="skyline" />
-        <hr id="underline" />
-        <h1>A Simple Way To Send & Receive Ether</h1>
-        <h3>Per congue consulatu pertinacia eu, modus fabellas vituperata et qui, aeque euismod efficiantur in est. Cum saperet incorrupte no.</h3>
-        <RaisedButton label="Get Started" style={style} buttonStyle={buttonStyle} labelStyle={labelStyle} primary={true} containerElement={<Link to="/create"/>}/>
-        <Steps />
+      <div className="row splash">
+        <div className="col-xs-12">
+          <img id="skyline" src="https://app.aerapay.com/img/svgs/skyline.svg" alt="skyline" />
+          <hr id="underline" />
+          <h1>A Simple Way To Send & Receive Ether</h1>
+          <h3>Per congue consulatu pertinacia eu, modus fabellas vituperata et qui, aeque euismod efficiantur in est. Cum saperet incorrupte no.</h3>
+          <RaisedButton label="Get Started" style={style} buttonStyle={buttonStyle} labelStyle={labelStyle} primary={true} containerElement={<Link to="/create"/>}/>
+        </div>
       </div>
     )
   }
